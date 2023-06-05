@@ -4,12 +4,12 @@ form.addEventListener('submit', (event) => {
   event.preventDefault(); 
 
   const formData = new FormData(form);
-  const name = formData.get('name');
+  const user = formData.get('user');
   const lastName = formData.get('lastName');
   const email = formData.get('email');
   const message = formData.get('message');
 
-  const data = { name, lastName, email, message };
+  const data = { user, lastName, email, message };
   console.log(data)
 
   fetch('http://localhost:5500/guardar', { 
