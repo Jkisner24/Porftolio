@@ -32,6 +32,9 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.get('/', async (req, res)=>{
+    res.send('init')
+})
 app.post('/guardar', (req, res) => {
     const { name, lastName, email, message } = req.body;
     const newUser = new User({ name, lastName, email, message });
