@@ -12,7 +12,7 @@ form.addEventListener('submit', (event) => {
   const data = { name, lastName, email, message };
   console.log(data)
 
-  fetch('http://localhost:5500/guardar', { 
+  fetch('https://porftolio-jkisner24.vercel.app/guardar', { 
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
