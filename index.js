@@ -7,12 +7,12 @@ const User = require('./models/user')
 require('dotenv').config();
 
 const app = express();
-const port = 5500; 
+const port = process.env.PORT || 3000; 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}/${process.env.DB_NAME}`;
 
 
 app.listen(port, () => {
-    console.log(`Servidor en ejecución en http://127.0.0.7:${port}`);
+    console.log(`Servidor en ejecución http://localhost:${port}`);
   });
   
 mongoose
