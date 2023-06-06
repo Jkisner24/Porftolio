@@ -403,7 +403,6 @@
   const message = formData.get('message');
 
   const data = { user, lastName, email, message };
-  console.log(data)
 
   fetch("https://porftolio-eight.vercel.app", { 
     method: 'POST',
@@ -418,7 +417,7 @@
         position: 'top-end',
         icon: 'success',
         title: 'Thanks for contacting!',
-        showConfirmButton: false,
+        showConfirmButton: true,
   timer: 3500
 })
     })
