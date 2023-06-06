@@ -1,4 +1,4 @@
-/* const form = document.getElementById('myForm');
+const form = document.getElementById('myForm');
 
 form.addEventListener('submit', (event) => {
   event.preventDefault(); 
@@ -26,4 +26,3 @@ form.addEventListener('submit', (event) => {
       console.error('Error al enviar los datos:', error);
     });
 });
- */
