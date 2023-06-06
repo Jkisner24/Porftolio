@@ -12,7 +12,7 @@ form.addEventListener('submit', (event) => {
   const data = { user, lastName, email, message };
   console.log(data)
 
-  fetch('${window.location.origin}/guardar', { 
+  fetch(window.location.origin + '/guardar', { 
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
