@@ -28,7 +28,11 @@ mongoose
   });
 
 
-app.use(cors());
+const corsOptions = {
+  origin: 'https://porftolio-9pf642fmx-jkisner24.vercel.app',
+};
+  
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
