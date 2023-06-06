@@ -36,7 +36,7 @@ app.use(express.urlencoded({ extended: true }));
 app.get('/', async (req, res)=>{
     res.send('init')
 })
-app.post('/guardar', (req, res) => {
+app.post('/', (req, res) => {
     const { user, lastName, email, message } = req.body;
     const newUser = new User({ user, lastName, email, message });
   
