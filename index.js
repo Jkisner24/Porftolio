@@ -38,6 +38,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 app.post('/', (req, res) => {
+  console.log("asdasd")
     const { user, lastName, email, message } = req.body;
     const newUser = new User({ user, lastName, email, message });
   
