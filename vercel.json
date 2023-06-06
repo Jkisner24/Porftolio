@@ -14,6 +14,7 @@
     { "src": "/utils/fonts/(.*)\\.svg", "dest": "/front/utils/fonts/$1.svg" },
     { "src": "/utils/fonts/(.*)\\.ttf", "dest": "/front/utils/fonts/$1.ttf" },
     { "src": "/utils/fonts/(.*)\\.woff", "dest": "/front/utils/fonts/$1.woff" },
+    { "src": "/utils/fonts/(.*)\\.woff", "dest": "/front/utils/fonts/$1.woff2" },
     { "src": "/(.*)", "dest": "/front/index.html" }
   ]
 }
