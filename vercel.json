@@ -10,11 +10,10 @@
     { "src": "/utils/css/aos.css", "dest": "/front/utils/css/aos.css" },
     { "src": "/utils/css/line-awesome.min.css", "dest": "/front/utils/css/line-awesome.min.css" },
     { "src": "/utils/fonts/(.*)", "dest": "/front/utils/fonts/$1" },
-    { "src": "/utils/fonts/(.*)\\.eot", "dest": "/front/utils/fonts/$1.eot" },
-    { "src": "/utils/fonts/(.*)\\.svg", "dest": "/front/utils/fonts/$1.svg" },
-    { "src": "/utils/fonts/(.*)\\.ttf", "dest": "/front/utils/fonts/$1.ttf" },
-    { "src": "/utils/fonts/(.*)\\.woff", "dest": "/front/utils/fonts/$1.woff" },
-    { "src": "/utils/fonts/(.*)\\.woff", "dest": "/front/utils/fonts/$1.woff2" },
+    { "src": "/utils/fonts/(.*).(eot)", "dest": "/front/utils/fonts/$1.eot", "headers": { "Content-Type": "application/vnd.ms-fontobject" } },
+    { "src": "/utils/fonts/(.*).(svg)", "dest": "/front/utils/fonts/$1.svg", "headers": { "Content-Type": "image/svg+xml" } },
+    { "src": "/utils/fonts/(.*).(ttf|otf)", "dest": "/front/utils/fonts/$1.ttf", "headers": { "Content-Type": "application/font-sfnt" } },
+    { "src": "/utils/fonts/(.*).(woff|woff2)", "dest": "/front/utils/fonts/$1.woff", "headers": { "Content-Type": "font/woff" } },
     { "src": "/(.*)", "dest": "/front/index.html" }
   ]
 }
