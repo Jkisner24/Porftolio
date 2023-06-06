@@ -12,7 +12,7 @@ form.addEventListener('submit', (event) => {
   const data = { user, lastName, email, message };
   console.log(data)
 
-  fetch(`${window.location.origin}/`, { 
+  fetch(`${window.location.origin}`, { 
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
