@@ -29,7 +29,7 @@ mongoose
 
 
 const corsOptions = {
-  origin: 'https://porftolio-eight.vercel.app/',
+  origin: 'https://porftolio-eight.vercel.app',
 };
   
 app.use(cors(corsOptions));
