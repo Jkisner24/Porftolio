@@ -37,8 +37,8 @@ app.get('/', async (req, res)=>{
     res.send('init')
 })
 app.post('/guardar', (req, res) => {
-    const { name, lastName, email, message } = req.body;
-    const newUser = new User({ name, lastName, email, message });
+    const { user, lastName, email, message } = req.body;
+    const newUser = new User({ user, lastName, email, message });
   
     newUser.save()
       .then(() => {
