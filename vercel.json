@@ -6,7 +6,10 @@
   ],
   "routes": [
     { "src": "/api/(.*)", "dest": "index.js" },
-    { "src": "/utils/css/(.*)", "dest": "front/utils/css/$1" },
+    { "src": "/utils/css/style.css", "dest": "/front/utils/css/style.css" },
+    { "src": "/utils/css/aos.css", "dest": "/front/utils/css/aos.css" },
+    { "src": "/utils/css/line-awesome.min.css", "dest": "/front/utils/css/line-awesome.min.css" },
     { "src": "/(.*)", "dest": "/front/index.html" }
   ]
 }
+
