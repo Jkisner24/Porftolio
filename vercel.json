@@ -5,7 +5,7 @@
     { "src": "front/**", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "index.js" },
+    { "src": "/api/(.*)", "methods": ["POST"], "dest": "index.js" },
     { "src": "/utils/css/style.css", "dest": "/front/utils/css/style.css" },
     { "src": "/utils/images/(.*)", "dest": "/front/utils/images/$1" },
     { "src": "/(.*)", "dest": "/front/index.html" }
