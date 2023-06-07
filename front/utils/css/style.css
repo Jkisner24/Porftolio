@@ -14,7 +14,7 @@
 body {
     background-color: var(--color-base2);
     color: var(--color-body);
-    font-family: var(--font-base);
+    font-family: var(--font-base), sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6 {
